@@ -1,8 +1,14 @@
 from tkinter import *
 
 def somar():
-    soma = int(caixa_texto1.get()) + int(caixa_texto2.get())
-    somatotal["text"] = soma
+    soma = 0
+    try:
+        if caixa_texto1 != "" and caixa_texto2 != "": 
+            soma = int(caixa_texto1.get()) + int(caixa_texto2.get())
+            somatotal["text"] = soma
+    except ValueError:
+        print("Insira valores nas caixas de texto")
+        somatotal["text"] = "Insira valores"        
     return soma
 
 window = Tk()
