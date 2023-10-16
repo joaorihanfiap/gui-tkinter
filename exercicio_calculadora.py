@@ -34,8 +34,6 @@ container2.pack()
 container3 = Frame(window, pady=10, padx=15)
 container3.pack()
 
-
-
 botao = Button(container3, text="Somar", padx=10, pady=5, bg="purple", fg="white")
 botao["font"] = ("Courrier New", "16")
 botao["command"] = somar
